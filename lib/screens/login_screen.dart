@@ -13,13 +13,13 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              CircleAvatar(radius: 40, backgroundColor: Colors.white70, child: Text("LOGO")), // [cite: 102]
+              CircleAvatar(radius: 40, backgroundColor: Colors.white70, child: Text("LOGO")), 
               SizedBox(height: 20),
-              TextField(decoration: InputDecoration(labelText: "USUARIO", filled: true, fillColor: Colors.white)), // [cite: 98]
+              TextField(decoration: InputDecoration(labelText: "USUARIO", filled: true, fillColor: Colors.white)), 
               SizedBox(height: 10),
-              TextField(obscureText: true, decoration: InputDecoration(labelText: "CONTRASEÑA", filled: true, fillColor: Colors.white)), // [cite: 99]
-              TextButton(onPressed: () {}, child: Text("¿Has olvidado tu contraseña?", style: TextStyle(color: Colors.black54))), // [cite: 103]
-              ElevatedButton(onPressed: () => Navigator.pushReplacementNamed(context, '/home'), child: Text("REGISTRARSE")), // [cite: 104]
+              TextField(obscureText: true, decoration: InputDecoration(labelText: "CONTRASEÑA", filled: true, fillColor: Colors.white)), 
+              TextButton(onPressed: () {}, child: Text("¿Has olvidado tu contraseña?", style: TextStyle(color: Colors.black54))), 
+              ElevatedButton(onPressed: () => Navigator.pushReplacementNamed(context, '/home'), child: Text("REGISTRARSE")), 
               SizedBox(height: 15),
               ElevatedButton(onPressed: () {}, child: Text("CONTINUAR"), style: ElevatedButton.styleFrom(backgroundColor: Colors.white, foregroundColor: Colors.black)), // [cite: 105]
             ],

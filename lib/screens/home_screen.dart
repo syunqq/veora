@@ -9,21 +9,21 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("BIENVENIDO, \"NOMBRE\"!", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)), // [cite: 78]
-            Text("Recomendación del dia", style: TextStyle(fontSize: 16, color: Colors.grey)), // [cite: 79]
+            Text("BIENVENIDO, NOMBRE", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)), 
+            Text("Recomendación del dia", style: TextStyle(fontSize: 16, color: Colors.grey)), 
             Expanded(
               child: Container(
                 margin: EdgeInsets.symmetric(vertical: 20),
                 width: double.infinity,
                 color: Colors.grey[800],
-                child: Center(child: Text("PORTADA", style: TextStyle(fontSize: 30))), // [cite: 80]
+                child: Center(child: Text("PORTADA", style: TextStyle(fontSize: 30))), 
               ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                ElevatedButton(onPressed: () {}, child: Text("Saber más")), // [cite: 81]
-                ElevatedButton(onPressed: () => Navigator.pushNamed(context, '/review'), child: Text("Escribir reseña")), // [cite: 82]
+                ElevatedButton(onPressed: () {}, child: Text("Saber más")), 
+                ElevatedButton(onPressed: () => Navigator.pushNamed(context, '/review'), child: Text("Escribir reseña")), 
               ],
             ),
             SizedBox(height: 30),
@@ -38,7 +38,6 @@ bottomNavigationBar: BottomNavigationBar(
           BottomNavigationBarItem(icon: Icon(Icons.person), label: ''),
           BottomNavigationBarItem(icon: Icon(Icons.settings), label: ''),
         ],
-        // Corregido: Ahora usamos una función con llaves {}
         onTap: (index) {
           if (index == 1) {
             Navigator.pushNamed(context, '/donations');

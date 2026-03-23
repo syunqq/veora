@@ -9,17 +9,17 @@ class ReviewScreen extends StatelessWidget {
         padding: EdgeInsets.all(20),
         child: Column(
           children: [
-            Text("Hablanos sobre: \"Titulo\"", style: TextStyle(fontSize: 20)), // [cite: 84, 85]
+            Text("Hablanos sobre: \"Titulo\"", style: TextStyle(fontSize: 20)), 
             SizedBox(height: 20),
-            Container(height: 150, width: 150, color: Colors.grey, child: Center(child: Text("PORTADA"))), // [cite: 87]
+            Container(height: 150, width: 150, color: Colors.grey, child: Center(child: Text("PORTADA"))), 
             SizedBox(height: 20),
-            TextField(maxLines: 4, decoration: InputDecoration(hintText: "Escribe aquí...", border: OutlineInputBorder())), // [cite: 90]
+            TextField(maxLines: 4, decoration: InputDecoration(hintText: "Escribe aquí...", border: OutlineInputBorder())), 
             SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                ElevatedButton(onPressed: () => Navigator.pop(context), child: Text("Enviar")), // [cite: 93]
-                ElevatedButton(onPressed: () => Navigator.pop(context), child: Text("Cancelar")), // [cite: 94]
+                ElevatedButton(onPressed: () => Navigator.pop(context), child: Text("Enviar")), 
+                ElevatedButton(onPressed: () => Navigator.pop(context), child: Text("Cancelar")), 
               ],
             )
           ],

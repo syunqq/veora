@@ -9,16 +9,16 @@ class DonationsScreen extends StatelessWidget {
         padding: EdgeInsets.all(20),
         child: Column(
           children: [
-            Text("¿Dónde quieres canjear tus puntos?", style: TextStyle(fontSize: 18)), // [cite: 86]
+            Text("¿Dónde quieres canjear tus puntos?", style: TextStyle(fontSize: 18)), 
             SizedBox(height: 20),
             Expanded(
               child: GridView.count(
                 crossAxisCount: 2,
                 children: [
-                  _causeCard("Pozos"), // [cite: 88]
-                  _causeCard("Alimentos"), // [cite: 89]
-                  _causeCard("XXXXX"), // [cite: 91]
-                  _causeCard("XXXXX"), // [cite: 92]
+                  _causeCard("Pozos"), 
+                  _causeCard("Alimentos"), 
+                  _causeCard("Otro"), 
+                  _causeCard("Otro"), 
                 ],
               ),
             ),
