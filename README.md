@@ -20,3 +20,4 @@ La estructura organizada del proyecto es la siguiente
 Se debe tener instalado Flutter 
 Eecutar flutter pub get en la terminal para descargar las dependencias necesarias y usar el repositorio del proyecto para ejecutarlo
 Conectar un emulador o dispositivo físico y ejecutar el comando flutter run.
+Se puede ejecutar desde Google, pulsando F12 y pulsando "CTRL + SHIFT + M" para verlo como un móvil.
